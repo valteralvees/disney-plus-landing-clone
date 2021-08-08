@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Avenir Roman";
+  src: url("avenir-roman.ttf") format("truetype")
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("assets/bg.jpg") no-repeat top center;
+  background-size:cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  font-family: "Avenir Roman";
+}
+
+img.franchise {
+  max-width: 600px;
+  position: absolute;
+  bottom: 25px;
+}
+
+img.logo {
+  max-width: 160px;
+}
+
+
+.hero-content {
+  padding-left: 80px;
+}
+
+.hero-content > p {
+  color:rgba(192, 192, 192, 0.8);
+  font-size: 12px;
+  line-height:18px;
+  margin-top: 16px;
+}
+
+h1 {
+  
+  font-size: 43px;
+  line-height: 53px;
+  color: #f9f9f9;
+  margin:20px 30px;
+
+}
+
+.price-container {
+  display: flex;
+}
+
+.price span {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #f9f9f9;
+}
+
+.price {
+  color:rgba(192, 192, 192, 0.8);
+  width: 300px;
+  max-width: 100%;
+}
+
+.price:first-child {
+  display: grid;
+}
+.price:first-child a {
+  align-self: end;
+}
+
+.price a {
+  background:#0063e5;
+  display: block;
+  padding: 16.5px 14px;
+  border-radius:4px;
+  font-size: 18px;
+  text-align: center;
+  color: #f9f9f9;
+  text-transform:uppercase;
+  text-decoration: none;
+  letter-spacing:1px;
+  font-weight: 100;
+}
+
+.preco p {
+  margin: 16px 0;
+}
+
+.price + .price {
+  margin-left: 32px;
+}
